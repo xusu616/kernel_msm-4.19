@@ -168,7 +168,7 @@ SYSCALL_DEFINE1(uselib, const char __user *, library)
 exit:
 	fput(file);
 out:
-  	return error;
+	return error;
 }
 #endif /* #ifdef CONFIG_USELIB */
 
@@ -1895,12 +1895,9 @@ out_ret:
 	return retval;
 }
 
-#if IS_ENABLED(CONFIG_KSU_STATIC_HOOKS)
-extern bool ksu_execveat_hook __read_mostly;
+#if IS_ENABLED(CONFIG_KSU_MANUAL_HOOK)
 extern int ksu_handle_execveat(int *fd, struct filename **filename_ptr, void *argv,
 			void *envp, int *flags);
-extern int ksu_handle_execveat_sucompat(int *fd, struct filename **filename_ptr,
-				 void *argv, void *envp, int *flags);
 #endif
 
 static int do_execveat_common(int fd, struct filename *filename,
@@ -1908,11 +1905,9 @@ static int do_execveat_common(int fd, struct filename *filename,
 			      struct user_arg_ptr envp,
 			      int flags)
 {
-#if IS_ENABLED(CONFIG_KSU_STATIC_HOOKS)
-	if (unlikely(ksu_execveat_hook))
-		ksu_handle_execveat(&fd, &filename, &argv, &envp, &flags);
-	else
-		ksu_handle_execveat_sucompat(&fd, &filename, &argv, &envp, &flags);
+#if IS_ENABLED(CONFIG_KSU_MANUAL_HOOK)
+	/* Next keeps su and adb-root handling active after init tracking ends. */
+	ksu_handle_execveat(&fd, &filename, &argv, &envp, &flags);
 #endif
 	return __do_execve_file(fd, filename, argv, envp, flags, NULL);
 }

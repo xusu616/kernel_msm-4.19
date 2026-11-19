@@ -1,0 +1,41 @@
+{
+  "original": {
+    "linux_banner": "Linux version 4.19.325-cip132-st16-Mi8937v2-g2ccb48e63608 (nobody@android-build) (Android (6877366 based on r383902b1) clang version 11.0.2 (https://android.googlesource.com/toolchain/llvm-project b397f81060ce6d701042b782172ed13bee898b79), LLD 11.0.2 (https://android.googlesource.com/toolchain/llvm-project b397f81060ce6d701042b782172ed13bee898b79)) #2 SMP PREEMPT Sun May 24 05:39:34 UTC 2026",
+    "dtb_parts": [
+      "0f5a021cab64b305d22169185304a6c38768fb82897449e0e07295f3e7ab168a",
+      "08688ca9877fe6e8a914fa35c8c8eb6cbae3861bebb4b019decfcfd920901f2a",
+      "1d1539bc13123df306052e06c2eecd9493c742c9a9ce0fd0f0d0f79d41c1e351",
+      "66a7703e5dc694d6240819410715957c67e2f5d302b0297d5127edcddb6a541c",
+      "0ff9853090cc1d8fe76cba028356cd861738a6161a09df2396b426e3a46221f5",
+      "b59fcebcddfd065f448de335acd33da7d3dedd5cdbcdd61f1b187d16b95f7888",
+      "bd01f25736daa51cafb793c0c23f2d1b491dda6ca13174e71b420ad47e71f5f4"
+    ],
+    "payload_bytes": 19663292,
+    "image_bytes": 40389120,
+    "image_sha256": "d8756a167709c4c0efbddefcb6f5296b8eb78df78b96000e0fde8ec329f77e88",
+    "dtb_bytes": 2149450,
+    "dtb_sha256": "6fa1e73a78ce46f686f206ee8b05111753bec110a05fcce93b82926e2ac32b33",
+    "dtb_prefix": "d00dfeed0004903b0000003800043280"
+  },
+  "baseline": {
+    "linux_banner": "Linux version 4.19.325-cip132-st16-Mi8937v2-g2ccb48e63608 (nobody@android-build) (Android (6877366 based on r383902b1) clang version 11.0.2 (https://android.googlesource.com/toolchain/llvm-project b397f81060ce6d701042b782172ed13bee898b79), LLD 11.0.2 (https://android.googlesource.com/toolchain/llvm-project b397f81060ce6d701042b782172ed13bee898b79)) #2 SMP PREEMPT Sun May 24 05:39:34 UTC 2026",
+    "dtb_parts": [
+      "0ff9853090cc1d8fe76cba028356cd861738a6161a09df2396b426e3a46221f5",
+      "66a7703e5dc694d6240819410715957c67e2f5d302b0297d5127edcddb6a541c",
+      "0f5a021cab64b305d22169185304a6c38768fb82897449e0e07295f3e7ab168a",
+      "1d1539bc13123df306052e06c2eecd9493c742c9a9ce0fd0f0d0f79d41c1e351",
+      "b59fcebcddfd065f448de335acd33da7d3dedd5cdbcdd61f1b187d16b95f7888",
+      "08688ca9877fe6e8a914fa35c8c8eb6cbae3861bebb4b019decfcfd920901f2a",
+      "bd01f25736daa51cafb793c0c23f2d1b491dda6ca13174e71b420ad47e71f5f4"
+    ],
+    "payload_bytes": 19671268,
+    "image_bytes": 40389120,
+    "image_sha256": "815f3657fd0d051c4e63c7fc12be2d8573dd1fe039e1fb47340f691539a9ded9",
+    "dtb_bytes": 2149450,
+    "dtb_sha256": "0594fb6f0e4941135ed06ac46fac8ea2a4c4ee82c306eefd6f38e4b3b2cd870c",
+    "dtb_prefix": "d00dfeed000452fb000000380003f7a4"
+  },
+  "dtbs_identical": false,
+  "kernel_identical": false,
+  "dtb_sets_identical": true
+}

@@ -1,0 +1,6 @@
+{
+  "repository": "https://github.com/JackA1ltman/NonGKI_Kernel_Build_2nd",
+  "commit": "bf3b496646c77147444faff1cc55b58a07b7160a",
+  "path": "Patches/Patch/susfs_patch_to_4.19.patch",
+  "version": "v2.2.0"
+}
