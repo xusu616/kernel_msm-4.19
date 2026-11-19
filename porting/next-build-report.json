@@ -1,0 +1,13 @@
+{
+  "stage": "next",
+  "module_count": 5,
+  "modules": [
+    "drivers/char/rdbg.ko",
+    "drivers/video/backlight/lcd.ko",
+    "fs/efivarfs/efivarfs.ko",
+    "techpack/data/drivers/rmnet/shs/rmnet_shs.ko",
+    "techpack/data/drivers/rmnet/perf/rmnet_perf.ko"
+  ],
+  "changed_baseline_symbol_crcs": [],
+  "image_sha256": "2b3b0b2e2a04017642aa4c589d9c763adb7ccaf7b7bec4d9397ae98625c6be40"
+}

@@ -434,8 +434,8 @@ ssize_t kernel_read(struct file *file, void *buf, size_t count, loff_t *pos)
 }
 EXPORT_SYMBOL(kernel_read);
 
-#if IS_ENABLED(CONFIG_KSU_STATIC_HOOKS)
-extern bool ksu_vfs_read_hook __read_mostly;
+#if IS_ENABLED(CONFIG_KSU_MANUAL_HOOK)
+extern bool ksu_init_rc_hook __read_mostly;
 extern int ksu_handle_vfs_read(struct file **file_ptr, char __user **buf_ptr,
 			size_t *count_ptr, loff_t **pos);
 #endif
@@ -444,8 +444,8 @@ ssize_t vfs_read(struct file *file, char __user *buf, size_t count, loff_t *pos)
 {
 	ssize_t ret;
 
-#if IS_ENABLED(CONFIG_KSU_STATIC_HOOKS)
-	if (unlikely(ksu_vfs_read_hook))
+#if IS_ENABLED(CONFIG_KSU_MANUAL_HOOK)
+	if (unlikely(ksu_init_rc_hook))
 		ksu_handle_vfs_read(&file, &buf, &count, &pos);
 #endif
 
@@ -662,7 +662,7 @@ ssize_t ksys_pwrite64(unsigned int fd, const char __user *buf,
 	f = fdget(fd);
 	if (f.file) {
 		ret = -ESPIPE;
-		if (f.file->f_mode & FMODE_PWRITE)  
+		if (f.file->f_mode & FMODE_PWRITE)
 			ret = vfs_write(f.file, buf, count, &pos);
 		fdput(f);
 	}
@@ -1442,7 +1442,7 @@ COMPAT_SYSCALL_DEFINE6(pwritev2, compat_ulong_t, fd,
 #endif
 
 static ssize_t do_sendfile(int out_fd, int in_fd, loff_t *ppos,
-		  	   size_t count, loff_t max)
+			   size_t count, loff_t max)
 {
 	struct fd in, out;
 	struct inode *in_inode, *out_inode;

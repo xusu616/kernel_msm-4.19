@@ -1,0 +1,13 @@
+{
+  "stage": "susfs",
+  "module_count": 5,
+  "modules": [
+    "drivers/char/rdbg.ko",
+    "drivers/video/backlight/lcd.ko",
+    "fs/efivarfs/efivarfs.ko",
+    "techpack/data/drivers/rmnet/shs/rmnet_shs.ko",
+    "techpack/data/drivers/rmnet/perf/rmnet_perf.ko"
+  ],
+  "changed_baseline_symbol_crcs": [],
+  "image_sha256": "363f7257f919cfc09343e22e87aba6638bbf24f040582960f4f1bab3d8c04835"
+}

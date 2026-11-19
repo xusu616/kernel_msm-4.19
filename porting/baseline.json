@@ -1,0 +1,12 @@
+{
+  "device": "santoni",
+  "rom": "lineage-18.1-20260524-UNOFFICIAL-Mi8937_4_19",
+  "boot_sha256": "3f3ee4069122657077ee114e2de88353aa58537a9cb65daf071c75e971bd147b",
+  "upstream": "https://github.com/Mi-Thorium/kernel_msm-4.19.git",
+  "kernel_commit": "2ccb48e636087005ada81441a24d67029abc8c5d",
+  "linux_banner": "Linux version 4.19.325-cip132-st16-Mi8937v2-g2ccb48e63608 (nobody@android-build) (Android (6877366 based on r383902b1) clang version 11.0.2 (https://android.googlesource.com/toolchain/llvm-project b397f81060ce6d701042b782172ed13bee898b79), LLD 11.0.2 (https://android.googlesource.com/toolchain/llvm-project b397f81060ce6d701042b782172ed13bee898b79)) #2 SMP PREEMPT Sun May 24 05:39:34 UTC 2026",
+  "config_sha256": "857652bf5c32cbde28bec4a76742870aab3f33092e9b6b1b8b1c438ab3e9ec7b",
+  "kernel_payload_size": 19663292,
+  "appended_dtb_bytes": 2149450,
+  "page_size": 2048
+}

@@ -1,0 +1,77 @@
+{
+  "cutoff": "2026-05-24T05:39:34Z",
+  "projects": [
+    {
+      "name": "dts-vendor-legacy",
+      "url": "https://github.com/Mi-Thorium/kernel_devicetree_msm-4.19.git",
+      "branch": "dts/master",
+      "commit": "918f25d5eb8dcd965b7c68b9ac287c4168b33df6",
+      "destination": "arch/arm64/boot/dts/vendor-legacy",
+      "revision_evidence": "latest reachable commit before ROM build; not verified against ROM binaries"
+    },
+    {
+      "name": "dts-msm8937",
+      "url": "https://github.com/Mi-Thorium/kernel_devicetree_xiaomi-msm8937.git",
+      "branch": "dts/mi8937/4.19/master",
+      "commit": "eca0b0dadbac0713824c3b42a1238c4e983982ae",
+      "destination": "arch/arm64/boot/dts/xiaomi-msm8937",
+      "revision_evidence": "latest reachable commit before ROM build; not verified against ROM binaries"
+    },
+    {
+      "name": "dts-sdm439",
+      "url": "https://github.com/Mi-Thorium/kernel_devicetree_xiaomi-sdm439.git",
+      "branch": "dts/mi439/4.19/master",
+      "commit": "8b2ae4cf628f1453d0dc8fd00dd070ae9fde0316",
+      "destination": "arch/arm64/boot/dts/xiaomi-sdm439",
+      "revision_evidence": "latest reachable commit before ROM build; not verified against ROM binaries"
+    },
+    {
+      "name": "techpack-msm8937",
+      "url": "https://github.com/Mi-Thorium/kernel_techpack_xiaomi-msm8937.git",
+      "branch": "techpack/mi8937/4.19/master",
+      "commit": "8bb3e9ba33bec89411a0309ee1c309cc06e55fb5",
+      "destination": "techpack/xiaomi-msm8937",
+      "revision_evidence": "latest reachable commit before ROM build; not verified against ROM binaries"
+    },
+    {
+      "name": "techpack-sdm439",
+      "url": "https://github.com/Mi-Thorium/kernel_techpack_xiaomi-sdm439.git",
+      "branch": "techpack/mi439/4.19/master",
+      "commit": "cfab702b180b3284483125c0bae8bcc1e5ec6e08",
+      "destination": "techpack/xiaomi-sdm439",
+      "revision_evidence": "latest reachable commit before ROM build; not verified against ROM binaries"
+    },
+    {
+      "name": "audio-legacy",
+      "url": "https://github.com/Mi-Thorium/kernel_techpack_audio-legacy.git",
+      "branch": "audio/4.19/mithorium/master",
+      "commit": "625b3e5d26721f927b68cd6eb8a00c8a242bb418",
+      "destination": "techpack/audio-legacy",
+      "revision_evidence": "latest reachable commit before ROM build; not verified against ROM binaries"
+    },
+    {
+      "name": "camera-legacy",
+      "url": "https://github.com/Mi-Thorium/kernel_techpack_camera-legacy.git",
+      "branch": "camera/LA.UM.8.6.r1-05300-89xx.0/4.19/mithorium",
+      "commit": "a72413660fdb2dd1ae97dac7723af31bb33633f3",
+      "destination": "techpack/camera-legacy",
+      "revision_evidence": "latest reachable commit before ROM build; not verified against ROM binaries"
+    },
+    {
+      "name": "camera-legacy-m",
+      "url": "https://github.com/Mi-Thorium/kernel_techpack_camera-legacy.git",
+      "branch": "camera/LA.UM.5.3-10610-89xx.0/4.19/mithorium",
+      "commit": "1f56a74ef7e3bc215637e7bde627152f8ae41bc1",
+      "destination": "techpack/camera-legacy-m",
+      "revision_evidence": "latest reachable commit before ROM build; not verified against ROM binaries"
+    },
+    {
+      "name": "prima",
+      "url": "https://github.com/Mi-Thorium/vendor_qcom_opensource_wlan_prima.git",
+      "branch": "wlan/LA.UM.9.6.4/mithorium/master",
+      "commit": "7fbe512f0ea8cbaef681e2a54445c56e91fd80dd",
+      "destination": "drivers/staging/prima",
+      "revision_evidence": "latest reachable commit before ROM build; not verified against ROM binaries"
+    }
+  ]
+}
